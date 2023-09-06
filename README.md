@@ -1,4 +1,4 @@
-# blocklist
+# 🧹 blocklist
 
 ```
 youtube.com##.ytd-carousel-ad-renderer

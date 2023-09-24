@@ -1,3 +1,6 @@
+! Marktplaats: ads from businesses
+marktplaats.nl##li.hz-Listing.hz-Listing--list-item:has(.hz-Listing-seller-link)
+! YouTube annoyances
 youtube.com##.ytd-carousel-ad-renderer
 youtube.com##.ytd-in-feed-ad-layout-renderer
 youtube.com##.ytd-item-section-renderer:has(.ytd-reel-shelf-renderer)

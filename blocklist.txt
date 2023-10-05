@@ -1,6 +1,8 @@
 ! Ads and annoyances blocklist
 ! https://raw.githubusercontent.com/richardvanaalst/blocklist/main/blocklist.txt
 ! ---
+! Unwanted Google search results
+www.google.com##div.MjjYud:has([href^="https://www.w3schools.com/"])
 ! Marktplaats: remove results from business accounts results
 marktplaats.nl##li.hz-Listing.hz-Listing--list-item:has(.hz-Listing-seller-link)
 ! YouTube: Shorts, ads, annoyances

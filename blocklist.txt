@@ -10,3 +10,4 @@ youtube.com##.ytd-carousel-ad-renderer
 youtube.com##.ytd-in-feed-ad-layout-renderer
 youtube.com##.ytd-item-section-renderer:has(.ytd-reel-shelf-renderer)
 youtube.com##.ytd-rich-section-renderer
+youtube.com##ytd-popup-container.ytd-app

@@ -11,7 +11,7 @@ youtube.com##.ytd-in-feed-ad-layout-renderer
 youtube.com##.ytd-item-section-renderer:has(.ytd-reel-shelf-renderer)
 youtube.com##.ytd-rich-section-renderer
 ! youtube.com##ytd-popup-container.ytd-app
-youtube.com##+js(set,yt.config\_.openPopupConfig.supportedPopups.adBlockMessageViewModel, false)
-youtube.com##+js(set, Object.prototype.adBlocksFound, 0)
-youtube.com##+js(set, ytplayer.config.args.raw\_player\_response.adPlacements, \[\])
-youtube.com##+js(set, Object.prototype.hasAllowedInstreamAd, true)
+! youtube.com##+js(set,yt.config\_.openPopupConfig.supportedPopups.adBlockMessageViewModel, false)
+! youtube.com##+js(set, Object.prototype.adBlocksFound, 0)
+! youtube.com##+js(set, ytplayer.config.args.raw\_player\_response.adPlacements, \[\])
+! youtube.com##+js(set, Object.prototype.hasAllowedInstreamAd, true)

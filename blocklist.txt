@@ -9,7 +9,9 @@ marktplaats.nl##li.hz-Listing.hz-Listing--list-item:has(.hz-Listing-seller-link)
 youtube.com##.ytd-carousel-ad-renderer
 youtube.com##.ytd-in-feed-ad-layout-renderer
 youtube.com##.ytd-item-section-renderer:has(.ytd-reel-shelf-renderer)
+youtube.com##.ytd-item-section-renderer:has([aria-label="Shorts"])
 youtube.com##.ytd-rich-section-renderer
+! YouTube: block Adblocker blocker
 ! youtube.com##ytd-popup-container.ytd-app
 ! youtube.com##+js(set,yt.config\_.openPopupConfig.supportedPopups.adBlockMessageViewModel, false)
 ! youtube.com##+js(set, Object.prototype.adBlocksFound, 0)

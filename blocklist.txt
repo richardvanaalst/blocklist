@@ -5,5 +5,7 @@
 www.google.com##div.MjjYud:has([href^="https://www.w3schools.com/"])
 ! Marktplaats: remove results from business accounts results
 marktplaats.nl##li.hz-Listing.hz-Listing--list-item:has(.hz-Listing-seller-link)
-! YouTube: Shorts, ads, annoyances
+! YouTube Shorts - desktop
 youtube.com##ytd-rich-section-renderer:has([is-shorts])
+! YouTube Shorts - mobile
+youtube.com##ytm-item-section-renderer:has(ytm-reel-shelf-renderer)

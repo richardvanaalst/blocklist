@@ -6,6 +6,9 @@ www.google.com##div.MjjYud:has([href^="https://www.w3schools.com/"])
 ! Marktplaats: remove results from business accounts results
 marktplaats.nl##li.hz-Listing.hz-Listing--list-item:has(.hz-Listing-seller-link)
 ! YouTube Shorts - desktop
-youtube.com##ytd-rich-section-renderer:has([is-shorts])
+! flow 1 |  .ytd-rich-grid-renderer   :has([is-shorts])
+youtube.com##ytd-rich-section-renderer:has(ytd-rich-shelf-renderer)
+! flow 2 |  .ytd-section-list-renderer
+youtube.com##ytd-item-section-renderer:has(ytd-reel-shelf-renderer)
 ! YouTube Shorts - mobile
 youtube.com##ytm-item-section-renderer:has(ytm-reel-shelf-renderer)

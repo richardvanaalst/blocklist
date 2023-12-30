@@ -1,14 +1,17 @@
-! Ads and annoyances blocklist
+!! Ads and annoyances blocklist
 ! https://raw.githubusercontent.com/richardvanaalst/blocklist/main/blocklist.txt
 ! ---
-! Unwanted Google search results
+!! Unwanted Google search results
 www.google.com##div.MjjYud:has([href^="https://www.w3schools.com/"])
-! Marktplaats: remove results from business accounts results
+!! Marktplaats: remove results from business accounts results
 marktplaats.nl##li.hz-Listing.hz-Listing--list-item:has(.hz-Listing-seller-link)
-! YouTube Shorts - desktop
-! flow 1 |  .ytd-rich-grid-renderer   :has([is-shorts])
+!! Remove YouTube Shorts
+! desktop
+! flow 1 |   .ytd-rich-grid-renderer  :has([is-shorts])
 youtube.com##ytd-rich-section-renderer:has(ytd-rich-shelf-renderer)
-! flow 2 |  .ytd-section-list-renderer
+! flow 2 |   .ytd-section-list-renderer
 youtube.com##ytd-item-section-renderer:has(ytd-reel-shelf-renderer)
-! YouTube Shorts - mobile
+! mobile
 youtube.com##ytm-item-section-renderer:has(ytm-reel-shelf-renderer)
+! search |   .ytd-item-section-renderer
+youtube.com##ytd-video-renderer:has([aria-label="Shorts"])

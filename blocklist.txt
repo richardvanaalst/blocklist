@@ -1,27 +1,30 @@
 ! Title: Richard's ads and annoyances blocklist
-! Description: Hide annoyances like YouTube Shorts
-! Version: 1.1.0
-! Last modified: 2024-08-16 21:48
-! Expires: 2 weeks (update frequency)
+! Description: Remove annoyances
+! Version: 1.2.0
+! Last modified: 2025-10-28 09:07
+! Expires: 1 month (update frequency)
 ! Homepage: https://github.com/richardvanaalst/blocklist
 ! License: https://github.com/richardvanaalst/blocklist/blob/main/LICENSE.md
-
-! Usage: Add to the import/custom URL field of your favourite adblocker, like uBlock Origin:
+! Usage: Add URL below to the import or custom URL field of your favourite adblocker, e.g. uBlock Origin:
 ! https://raw.githubusercontent.com/richardvanaalst/blocklist/main/blocklist.txt
 
-! Unwanted Google search results
-www.google.com##div.MjjYud:has([href^="https://www.w3schools.com/"])
+! Unwanted search results
+ecosia.org##.result:has(a[href*="w3schools"])
+google.com##div.MjjYud:has([href^="https://www.w3schools.com/"])
+
+! NRC login pop-up
+www.nrc.nl##.dmt-login-modal
 
 ! Marktplaats: remove results from business accounts results
 marktplaats.nl##li.hz-Listing.hz-Listing--list-item:has(.hz-Listing-seller-link)
 
 ! Remove YouTube Shorts
 ! desktop
-! flow 1 |   .ytd-rich-grid-renderer  :has([is-shorts])
-youtube.com##ytd-rich-section-renderer:has(ytd-rich-shelf-renderer)
-! flow 2 |   .ytd-section-list-renderer
-youtube.com##ytd-item-section-renderer:has(ytd-reel-shelf-renderer)
+! flow=1 |   .ytd-rich-grid-renderer  :has([is-shorts])
+! youtube.com##ytd-rich-section-renderer:has(ytd-rich-shelf-renderer)
+! flow=2 |   .ytd-section-list-renderer
+! youtube.com##ytd-item-section-renderer:has(ytd-reel-shelf-renderer)
 ! mobile
-youtube.com##ytm-item-section-renderer:has(ytm-reel-shelf-renderer)
+! youtube.com##ytm-item-section-renderer:has(ytm-reel-shelf-renderer)
 ! search |   .ytd-item-section-renderer
-youtube.com##ytd-video-renderer:has([aria-label="Shorts"])
+! youtube.com##ytd-video-renderer:has([aria-label="Shorts"])

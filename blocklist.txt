@@ -2,7 +2,7 @@
 ! Description: Remove annoyances
 ! Version: 1.2.0
 ! Last modified: 2025-10-28 09:07
-! Expires: 1 month (update frequency)
+! Expires: 2 weeks (update frequency)
 ! Homepage: https://github.com/richardvanaalst/blocklist
 ! License: https://github.com/richardvanaalst/blocklist/blob/main/LICENSE.md
 ! Usage: Add URL below to the import or custom URL field of your favourite adblocker, e.g. uBlock Origin:

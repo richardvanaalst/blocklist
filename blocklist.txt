@@ -12,12 +12,6 @@
 ecosia.org##.result:has(a[href*="w3schools"])
 google.com##div.MjjYud:has([href^="https://www.w3schools.com/"])
 
-! NRC login pop-up
-www.nrc.nl##.dmt-login-modal
-
-! Marktplaats: remove results from business accounts results
-marktplaats.nl##li.hz-Listing.hz-Listing--list-item:has(.hz-Listing-seller-link)
-
 ! Remove YouTube Shorts
 ! desktop
 ! flow=1 |   .ytd-rich-grid-renderer  :has([is-shorts])
@@ -28,3 +22,19 @@ marktplaats.nl##li.hz-Listing.hz-Listing--list-item:has(.hz-Listing-seller-link)
 ! youtube.com##ytm-item-section-renderer:has(ytm-reel-shelf-renderer)
 ! search |   .ytd-item-section-renderer
 ! youtube.com##ytd-video-renderer:has([aria-label="Shorts"])
+
+! Annoyances of Reddit
+! No voting buttons, removing rage temptation
+reddit.com##[data-post-click-location="vote"]
+! I don't want games
+reddit.com##[noun="games_drawer"]
+
+! NRC login pop-up
+nrc.nl##.dmt-login-modal
+
+! Marktplaats: remove business accounts
+marktplaats.nl##li.hz-Listing.hz-Listing--list-item:has(.hz-Listing-seller-link)
+
+! Lucida images, compacting page height
+lucida.*##.logo-outer
+lucida.*##img.svelte-1ipdo3f

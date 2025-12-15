@@ -24,9 +24,9 @@ google.com##div.MjjYud:has([href^="https://www.w3schools.com/"])
 ! youtube.com##ytd-video-renderer:has([aria-label="Shorts"])
 
 ! Annoyances of Reddit
-! No voting buttons, removing rage temptation
-reddit.com##[data-post-click-location="vote"]
-! I don't want games
+! No voting buttons etc., removing rage temptation
+reddit.com##.shreddit-post-container>:not([data-post-click-location="comments-button"])
+! No games
 reddit.com##[noun="games_drawer"]
 
 ! NRC login pop-up
